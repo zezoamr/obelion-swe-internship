@@ -7,7 +7,6 @@ body, html {
 
 
 
-
 .top-nav {
     background-color: #333;
     color: white;
@@ -18,7 +17,6 @@ body, html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .top-nav a, .top-nav select {
@@ -34,11 +32,15 @@ body, html {
     height: 20px;
     margin-right: 5px;
 }
+
+.top-nav .share-space{
+    color: green;
+}
+
 .sa-flag {
     background: url('saudi.jpeg');
     width: 20px; 
     height: 20px;
-    
 }
 
 
@@ -193,3 +195,4 @@ input {
     width: 17px;
     height: 17px;
 }
+
