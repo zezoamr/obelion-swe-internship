@@ -52,6 +52,13 @@ body, html {
     justify-content: space-between;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    
+}
+
 .nav-content {
     display: flex;
     flex-direction: row;
@@ -96,6 +103,11 @@ body, html {
     font-size: 16px;
 }
 
+.sticky .nav-buttons {
+    position: absolute;
+    right: 60px; /* Adjust this value if needed */
+}
+
 
 
 .container {
@@ -104,9 +116,6 @@ body, html {
     background-image: url("background.jpeg");
     background-size: cover;   
     height: 100%;
-}
-.image-section {
-    width: 50%;
 }
 
 
@@ -125,9 +134,7 @@ body, html {
     
 }
 
-.image-section {
-    width: 50%;
-}
+
 
 h2 {
     margin-top: 15px;
@@ -196,3 +203,8 @@ input {
     height: 17px;
 }
 
+.buffer-section {
+    height: 1500px;
+    background-image: url("background.jpeg");
+    background-size: cover;  
+}
