@@ -1,0 +1,198 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+
+
+.top-nav {
+    background-color: #333;
+    color: white;
+    padding: 5px 20px 10px ;
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-nav a, .top-nav select {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    background: none;
+    border: none;
+}
+
+.share-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.top-nav .share-space{
+    color: green;
+}
+
+.sa-flag {
+    background: url('saudi.jpeg');
+    width: 20px; 
+    height: 20px;
+}
+
+
+
+.main-nav {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-bar {
+    padding-left: 5%;
+    margin-bottom: 0px;
+    width: 20%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.get-started-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    background-image: url("background.jpeg");
+    background-size: cover;   
+    height: 100%;
+}
+.image-section {
+    width: 50%;
+}
+
+
+.login-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    width: 400px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    
+}
+
+.image-section {
+    width: 50%;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.social-btn {
+    background-color: white;
+    
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    text-align: center;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.social-btn img{
+    margin-right: 10px;
+    width: 17px;
+    height: 17px;
+}
+
