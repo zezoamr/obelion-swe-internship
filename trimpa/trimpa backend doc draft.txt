@@ -215,13 +215,12 @@
   - **400**: Failure
 
 #### 2. **Get flight suggestion by location**
-- **Endpoint**: `/flight/suggestion`
+- **Endpoint**: `/flight/deals/{location}`
 - **Method**: `GET`
 - **Description**: get stays suggestion by location.
 - **Request Body**:
   ```json
   {
-    "location": "String",
     "pagination": "pagination_object"
   }
   ```
@@ -263,13 +262,12 @@
   - **400**: Failure
 
 #### 4. **Get stays by location**
-- **Endpoint**: `/flight/stays`
+- **Endpoint**: `/flight/stays/{location}`
 - **Method**: `GET`
 - **Description**: get stays.
 - **Request Body**:
   ```json
   {
-    "location": "String",
     "pagination": ""pagination_object""
   }
   ```
