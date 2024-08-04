@@ -6,34 +6,67 @@
 
 .nav {
   display: flex;
+
+  width: Fixed (1,440px)px;
+  height: Hug (96px)px;
+  top: 64px;
+  padding: 8px 24px 8px 24px;
+  gap: 0px;
   justify-content: space-between;
-  align-items: center;
+  opacity: 0px;
+
+  background: #FFFFFF;
+
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #605dec;
+
+  width: 107px;
+  height: 30px;
+  padding: 12px 0 0 0;
+  top: 12px;
+  left: 12px;
 }
+
 
 .navLinks {
   display: flex;
-  gap: 1rem;
   align-items: center;
 
+  width: Hug (485px)px;
+  height: Hug (80px)px;
+  padding: 16px 0px 0px 0px;
+  gap: 16px;
+  opacity: 0px;
 
 }
 
 .navLink {
   text-decoration: none;
   color: #7c8db0;
+
+  width: Hug (69px)px;
+  height: Hug (42px)px;
+  padding: 10px 0px 10px 0px;
+  gap: 10px;
+  opacity: 0px;
 }
 
 .signUp {
-  background-color: #605dec;
+  
   color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
+  
+
+  width: Hug (95px)px;
+  height: Fixed (48px)px;
+  padding: 12px 20px 12px 20px;
+  gap: 8px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+
+  background: #605DEC;
+
 }
