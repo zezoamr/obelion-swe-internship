@@ -1,24 +1,48 @@
 .container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #f8f8f8;
+ 
+  background: url("world map.png");
+
+  width: Fixed (1,440px)px;
+  height: Fixed (700px)px;
+  top: 152px;
+  padding: 8px 0px 160px 0px;
+  gap: 48px;
+  opacity: 0px;
+
 }
 
 
 .main {
-  flex: 1;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  text-align: center;
   padding: 2rem;
+
+
 }
 
 .title {
-  font-size: 3rem;
-  color: #605dec;
-  margin-bottom: 2rem;
+  
+  width: 756px;
+  height: 265px;
+  gap: 0px;
+  opacity: 0px;
+ 
+  background: url("Group 8.png");
+
+  font-family: Nunito Sans;
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 90px;
+  text-align: center;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 .searchContainer {

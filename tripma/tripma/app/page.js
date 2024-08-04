@@ -4,7 +4,7 @@ export default function TripmaPage() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>It's more than just a trip</h1>
+        <p className={styles.title}>It's more than just a trip</p>
         <div className={styles.searchContainer}>
           <input type="text" placeholder="From where?" className={styles.searchInput} />
           <input type="text" placeholder="Where to?" className={styles.searchInput} />
