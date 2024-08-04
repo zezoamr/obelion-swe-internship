@@ -1,3 +1,4 @@
+import Popup from '@/components/popup';
 import styles from './page.module.css';
 
 export default function TripmaPage() {
@@ -13,6 +14,7 @@ export default function TripmaPage() {
           <button className={styles.searchButton}>Search</button>
         </div>
       </main>
+      <Popup />
     </div>
   );
 }
