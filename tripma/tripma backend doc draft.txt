@@ -190,30 +190,11 @@
 
 #### flight routes:
 
-#### 1. **Get flight deals**
+#### 2. **Get flight suggestion**
 - **Endpoint**: `/deals`
 - **Method**: `GET`
-- **Description**: get flight deals.
-- **params**: paginationObject
-- **Response**:
-  - **200**: Success, returns list of deals
-    ```json
-    [
-      {
-        "destination": "string",
-        "description": "string",
-        "price": "number",
-	      "photo":"png"
-      }
-    ]
-    ```
-  - **400**: Failure
-
-#### 2. **Get flight suggestion by location**
-- **Endpoint**: `/deals/{location}`
-- **Method**: `GET`
-- **Description**: get stays suggestion by location.
-- **params**: paginationObject
+- **Description**: get stays suggestion.
+- **params**: paginationObject, location: string, mostvisited: boolean, relatedFlightId: string
 - **Response**:
   - **200**: Success, returns list of stays
     ```json
@@ -232,7 +213,7 @@
 - **Endpoint**: `/stays`
 - **Method**: `GET`
 - **Description**: get stays.
-- **params**: paginationObject
+- **params**: paginationObject, location: string, mostvisited: boolean, relatedFlightId: string
 - **Response**:
   - **200**: Success, returns list of stays
     ```json
@@ -246,23 +227,6 @@
     ```
   - **400**: Failure
 
-#### 4. **Get stays by location**
-- **Endpoint**: `/stays/{location}`
-- **Method**: `GET`
-- **Description**: get stays.
-- **params**: paginationObject
-- **Response**:
-  - **200**: Success, returns list of stays
-    ```json
-    [
-      {
-        "title": "string",
-        "description": "string",
-	      "photo":"png"
-      }
-    ]
-    ```
-  - **400**: Failure
 
 #### 5. **Search Flights**
 - **Endpoint**: `/flights/search`
@@ -309,7 +273,11 @@
           ]
         }
       }
-    ]
+    ],
+    {
+      "priceHistogram":"histogram",
+      "priceChart":"chart"
+    }
     ```
   - **400**: Failure
 
@@ -346,7 +314,7 @@
 - **Endpoint**: `/shop`
 - **Method**: `GET`
 - **Description**: get shops.
-- **params**: paginationObject
+- **params**: paginationObject, location: string, mostvisited: boolean, relatedFlightId: string
 - **Response**:
   - **200**: Success, returns list of shops
     ```json
@@ -365,7 +333,7 @@
 - **Endpoint**: `/experinces`
 - **Method**: `GET`
 - **Description**: get experinces.
-- **params**: paginationObject
+- **params**: paginationObject, location: string, mostvisited: boolean, relatedFlightId: string
 - **Response**:
   - **200**: Success, returns list of stays
     ```json
@@ -407,7 +375,7 @@
 - **Request Body**:
   ```json
   {
-	"flightid":"number",
+	"flightid":"string",
     [
 	"passengerInfo": {
       		"fullName": "string",
@@ -475,9 +443,30 @@
   - **400**: Failure
 
 
+### **highlighted user reviews**
+- **Endpoint**: `/highlightedReviews`
+- **Method**: `GET`
+- **Description**: Get highlighted user reviews.
+- **params**: paginationObject
+- **Response**:
+  - **200**: Success, returns a number of reviews
+    ```json
+    [
+      {
+      "username": "string",
+      "location": "string",
+      "date": "date",
+      "rating": "number",
+      "Description": "string"
+      }
+    ]
+    ```
+  - **400**: Failure
+
+
 - userObject:
 {
-"id": "number",
+"id": "string",
 "emailPhone":"string",
 "password:"string",
 "image":"png"
@@ -486,7 +475,7 @@
 
 - bookingObject:
   {
-	"flightid":"number",
+	"flightid":"string",
     [
 	"passengerInfo": {
       		"fullName": "string",
